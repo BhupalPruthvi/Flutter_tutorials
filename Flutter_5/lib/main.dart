@@ -28,28 +28,11 @@ class Home extends StatelessWidget {
         elevation: 40.0,
         backgroundColor: Colors.lightBlue[400],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print('I am pressed');
-          },
-          icon: Icon(
-            Icons.access_alarm,
-            size: 50,
-            color: Colors.cyan[600],
-          ),
-        ),
+      body: Container(
+        color: Colors.amber[50],
+        child: const Text('Hello'),
       ),
       backgroundColor: Colors.white,
-      floatingActionButton: FloatingActionButton(
-        child: const Text(
-          'Press Here',
-          textScaleFactor: 1,
-          textAlign: TextAlign.center,
-        ),
-        onPressed: null,
-        backgroundColor: Colors.lightBlue[400],
-      ),
     );
   }
 }

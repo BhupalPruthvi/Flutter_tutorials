@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 
 //Add Root widget - one property
 
@@ -21,24 +20,26 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'My App1',
+          'Hello World!',
           textAlign: TextAlign.left,
         ),
         centerTitle: false,
         elevation: 40.0,
         backgroundColor: Colors.lightBlue[400],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print('I am pressed');
-          },
-          icon: Icon(
-            Icons.access_alarm,
-            size: 50,
-            color: Colors.cyan[600],
+      body: const Center(
+        child: Text(
+          'Hi Watermelon',
+          style: TextStyle(
+            decoration: TextDecoration.underline,
+            fontSize: 40,
+            fontWeight: FontWeight.w400,
           ),
         ),
+        /*Icon(
+          Icons.airport_shuttle,
+          size: 50,
+        ),*/
       ),
       backgroundColor: Colors.white,
       floatingActionButton: FloatingActionButton(
